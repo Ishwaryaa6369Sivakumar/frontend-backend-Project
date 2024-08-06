@@ -1,55 +1,57 @@
 package com.example.demo.Model;
 
-
 import jakarta.persistence.Entity;
-
 import jakarta.persistence.Id;
-
 
 @Entity
 public class Admin {
     @Id
-    private String adminid;
-    private String adminname;
-    private String adminemail;
-    private String adminpassword;
-    
+    private int id;
+    private String name;
+    private String emailid;
+    private String password;
+
     public Admin() {
     }
-    public Admin(String adminid, String adminname, String adminemail, String adminpassword) {
-        this.adminid = adminid;
-        this.adminname = adminname;
-        this.adminemail = adminemail;
-        this.adminpassword = adminpassword;
+
+    public Admin(int id, String name, String emailid, String password) {
+        this.id = id;
+        this.name = name;
+        this.emailid = emailid;
+        this.password = password;
     }
-    public String getAdminid() {
-        return adminid;
+
+    public int getId() {
+        return id;
     }
-    public void setAdminid(String adminid) {
-        this.adminid = adminid;
+
+    public void setId(int id) {
+        this.id = id;
     }
-    public String getAdminname() {
-        return adminname;
+
+    public String getName() {
+        return name;
     }
-    public void setAdminname(String adminname) {
-        this.adminname = adminname;
+
+    public void setName(String name) {
+        this.name = name;
     }
-    public String getAdminemail() {
-        return adminemail;
+
+    public String getEmailid() {
+        return emailid;
     }
-    public void setAdminemail(String adminemail) {
-        this.adminemail = adminemail;
+
+    public void setEmailid(String emailid) {
+        this.emailid = emailid;
     }
-    public String getAdminpassword() {
-        return adminpassword;
+
+    public String getPassword() {
+        return password;
     }
-    public void setAdminpassword(String adminpassword) {
-        this.adminpassword = adminpassword;
+
+    public void setPassword(String password) {
+        this.password = password;
     }
-   
+
 }
-
-
-
-
 
